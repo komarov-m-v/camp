@@ -129,7 +129,7 @@ body {
   gap: 0.625rem;
   justify-content: center;
   position: relative;
-  transition: background-color var(--transition), border-color var(--transition);
+  transition: background-color var(--transition), border-color var(--transition), box-shadow var(--transition);
 }
 .button__text {
   font-family: var(--primary-font-name), sans-serif;
@@ -147,7 +147,7 @@ body {
   }
 }
 .button--primary-neutral:focus {
-  border: 0.375rem solid var(--secondary-neutral-btn-focus-border);
+  box-shadow: 0 0 0 0.375rem var(--secondary-neutral-btn-focus-border);
   outline: none;
 }
 .button--primary-neutral:disabled {
@@ -171,7 +171,7 @@ body {
 }
 .button--secondary-neutral:focus {
   background-color: var(--secondary-neutral-btn-focus-bg);
-  border: 0.375rem solid var(--secondary-neutral-btn-focus-border);
+  box-shadow: 0 0 0 0.375rem var(--secondary-neutral-btn-focus-border);
   outline: none;
 }
 .button--secondary-neutral:focus .button__text {
